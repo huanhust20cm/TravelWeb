@@ -1,0 +1,34 @@
+.contentHeader {
+  background: #f4f4f4;
+  min-height: 20px;
+  max-height: 40px;
+  :global {
+    .nav-menu {
+      display: flex;
+      gap: 20px;
+      font-size: 15px;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 50px;
+      line-height: 40px;
+      a {
+        font-size: 15px;
+        font-weight: 500;
+        color: #636363 !important;
+      }
+      .number-phone {
+        position: relative;
+      }
+      .number-phone-1::before {
+        position: absolute;
+        content: '';
+        display: block;
+        border-left: 1px solid #636363;
+        height: 20px;
+        right: -9px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

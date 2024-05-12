@@ -1,0 +1,16 @@
+.customTooltip {
+    color: #222222;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 9px 8px;
+    white-space: pre-wrap;
+}
+
+.paragraph {
+    margin-bottom: 0 !important;
+}
+
+.toolTip {
+    position: absolute;
+    z-index: 1000;
+}

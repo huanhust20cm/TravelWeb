@@ -1,0 +1,26 @@
+.backToTop {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #a1b0bf;
+    position: fixed;
+    right: 5px;
+    bottom: 77px;
+    z-index: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &.hide {
+        display: none;
+    }
+
+    :global {
+        .anticon-arrow-up {
+            font-size: $f14;
+            color: #4b5566;
+        }
+    }
+}

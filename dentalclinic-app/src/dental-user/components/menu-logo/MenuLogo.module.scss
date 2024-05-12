@@ -1,0 +1,64 @@
+.menuLogo {
+    display: flex;
+    width: 100%;
+    padding: $s8 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    color: #fff;
+
+    .menuLogoBtn {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .logoIcon {
+        display: block;
+        width: 32px;
+        margin-right: 8px;
+    }
+
+    .titleBox {
+        position: relative;
+        padding-left: 12px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 1px;
+            height: 25px;
+            background: #cbd3d5;
+            opacity: 0.39;
+        }
+
+        .title {
+            font-size: $f18;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+
+        .subtitle {
+            font-size: 12px;
+        }
+
+        :global {
+            .title-panel {
+                font-size: $f18;
+                font-weight: bold;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .extra {
+        margin-left: auto;
+    }
+
+
+}
+
+@include media-breakpoint-down(lg) {
+    .title {
+        color: #222222;
+    }
+}

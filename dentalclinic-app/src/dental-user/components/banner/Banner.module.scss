@@ -1,0 +1,16 @@
+.bannerWidget {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 30px;
+  video {
+    width: 100%;
+    display: block;
+    margin: 0;
+    height: 620px;
+    object-fit: cover;
+    @include media-breakpoint-down(md) {
+      height: inherit;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.formcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Chiều cao của màn hình */
+  }
+  
+  .form-wrapper {
+    max-width: 600px;
+  }
+
+  .centerText {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  /* Bổ sung CSS nếu cần thiết */
+  /* Đảm bảo rằng nội dung không bị tràn khỏi màn hình */
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  

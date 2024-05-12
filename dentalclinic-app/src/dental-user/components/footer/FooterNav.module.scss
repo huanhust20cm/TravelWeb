@@ -1,0 +1,33 @@
+.footerNav {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các phần tử con trên footer chuyển xuống dòng khi không đủ không gian */
+    justify-content: space-between; /* Các phần tử con được căn chỉnh cách đều nhau */
+    width: 100%;
+    margin: auto;
+    background-color: #023076;
+    color: white;
+}
+
+.footerNav > div {
+    flex: 1; /* Phần tử con sẽ có kích thước đều nhau */
+    text-align: left; /* Căn giữa nội dung trong mỗi phần tử con */
+    padding: 10px; /* Tăng khoảng cách giữa nội dung và viền của mỗi phần tử con */
+    margin: 0 5%; /* Thêm lề 5% cho cả hai bên của mỗi phần tử con */
+}
+
+.footerNav header {
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+
+@media only screen and (max-width: 768px) {
+    .footerNav {
+        flex-direction: column; /* Chuyển footer thành dạng dọc khi màn hình nhỏ hơn 768px */
+    }
+    .footerNav > div {
+        flex: 1; /* Phần tử con sẽ có kích thước đều nhau */
+        text-align: left; /* Căn giữa nội dung trong mỗi phần tử con */
+        padding: 10px; /* Tăng khoảng cách giữa nội dung và viền của mỗi phần tử con */
+        margin-bottom: 5%; /* Thêm lề 5% cho cả hai bên và dưới của mỗi phần tử con */
+    }
+}

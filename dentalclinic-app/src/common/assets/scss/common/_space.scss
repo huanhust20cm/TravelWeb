@@ -1,0 +1,18 @@
+@include generate-spacing(dt-mt, margin-top);
+@include generate-spacing(dt-mr, margin-right);
+@include generate-spacing(dt-ml, margin-left);
+@include generate-spacing(dt-mb, margin-bottom);
+@include generate-spacing(dt-m, margin);
+@include generate-spacing(dt-pt, padding-top);
+@include generate-spacing(dt-pr, padding-right);
+@include generate-spacing(dt-pl, padding-left);
+@include generate-spacing(dt-pb, padding-bottom);
+@include generate-spacing(dt-p, padding);
+@include generate-spacing(dt-gap, gap);
+@include generate-spacing(dt-gap-x, column-gap);
+@include generate-spacing(dt-gap-y, row-gap);
+
+@include generate-spacing-plus(dt-px, padding-left, padding-right);
+@include generate-spacing-plus(dt-py, padding-bottom, padding-top);
+@include generate-spacing-plus(dt-mx, margin-left, margin-right);
+@include generate-spacing-plus(dt-my, margin-bottom, margin-top);

@@ -1,0 +1,36 @@
+.serviceWrap {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease-in-out;
+
+  .servicewidget {
+    align-items: center;
+    display: grid;
+    flex-direction: column;
+    padding-bottom: 5px;
+  }
+}
+
+.titleDv {
+  font-size: $f16;
+  font-weight: 600;
+}
+
+.iconDv {
+  display: grid;
+  align-items: center;
+  height: 50px;
+  margin: 0 auto 15px;
+}
+
+.serviceWrap:hover {
+  background: $color-default;
+  color: #fff;
+  cursor: pointer;
+
+  .iconDv {
+    filter: brightness(0) invert(1);
+  }
+}

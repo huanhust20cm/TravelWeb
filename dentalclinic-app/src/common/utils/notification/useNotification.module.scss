@@ -1,0 +1,36 @@
+.notification.customNotification {
+  padding: $s16;
+  :global {
+    .notification-success {
+      color: $successful;
+      font-size: $f16;
+    }
+    .notification-error {
+      color: $error;
+      font-size: $f16;
+    }
+    .notification-info {
+      color: $information;
+      font-size: $f16;
+    }
+    .notification-warning {
+      color: $warning;
+      font-size: $f16;
+    }
+
+    .ant-notification-notice-with-icon {
+      .ant-notification-notice-icon {
+        top: calc(1rem + 2.5px);
+        left: 1rem;
+      }
+      .ant-notification-notice-message {
+        margin-left: 1.75rem;
+        margin-block-end: 0;
+        font-size: $f14;
+      }
+    }
+    .ant-notification-notice-close {
+      top: 1rem;
+    }
+  }
+}

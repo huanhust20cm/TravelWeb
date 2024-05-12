@@ -1,0 +1,93 @@
+.mobileHeader {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid rgb(238, 242, 245);
+
+  :global {
+    .mobile-header-left {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0px $s8;
+      min-width: 0;
+
+      .mobile-header-left-text {
+        font-size: $f18;
+        font-weight: bold;
+      }
+    }
+
+    .mobile-header-right {
+      display: flex;
+      min-width: 0;
+
+      .mobile-header-right-btn {
+        border: none;
+        background: #fff;
+        padding: 0px 0.25rem;
+        margin-right: $s8;
+
+        .anticon {
+          font-size: 2.125rem;
+        }
+      }
+    }
+  }
+}
+
+.mobileLeftNav {
+  :global {
+    .ant-drawer-body {
+      padding: 10px;
+      background: #1e72b0;
+    }
+    .ant-menu-light .ant-menu-item-selected {
+      background-color: #27a2db;
+      color: #fff;
+    }
+    .ant-menu-light:not(.ant-menu-horizontal) .ant-menu-submenu-title:hover {
+      background-color: #00b8cd;
+    }
+    .sub-menu-title .ant-menu-title-content {
+      color: #fff !important;
+    }
+    .ant-menu-inline {
+      border-inline-end: none !important;
+    }
+    .ant-menu-light:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):hover,
+    .ant-menu-light > .ant-menu:not(.ant-menu-horizontal) .ant-menu-item:not(.ant-menu-item-selected):hover {
+      background-color: $color-sub;
+    }
+  }
+}
+
+.mobileHeaderWrap {
+  display: none;
+}
+
+@include media-breakpoint-down(xl) {
+  .mobileHeaderWrap {
+    display: block;
+  }
+  .drawer {
+    :global {
+      .ant-drawer-content-wrapper {
+        width: 450px !important;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .drawer {
+    :global {
+      .ant-drawer-content-wrapper {
+        width: 250px !important;
+      }
+    }
+  }
+}

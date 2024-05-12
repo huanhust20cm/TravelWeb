@@ -1,0 +1,33 @@
+.menuNav {
+  :global {
+    .icon-menu,
+    .button-menu {
+      display: flex;
+
+      .ant-menu-title-content {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .icon-menu,
+    .icon-menu:hover {
+      background-color: transparent !important;
+    }
+  }
+}
+@include media-breakpoint-down(xl) {
+  .menuNav {
+    :global {
+      .button-menu {
+        display: none !important;
+      }
+      .icon-menu {
+        padding-left: 0 !important;
+        padding-bottom: 5px;
+      }
+    }
+  }
+  .logoMobile {
+    filter: brightness(0) invert(1);
+  }
+}

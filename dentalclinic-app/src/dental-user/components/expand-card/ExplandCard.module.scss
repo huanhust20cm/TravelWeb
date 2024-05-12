@@ -1,0 +1,93 @@
+.expandCard {
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10px;
+    transition: all 0.2s ease-in-out;
+
+    .headerWrapper {
+        cursor: pointer;
+        background-color: #f3f3f3;
+        padding: 7px 16px;
+        min-height: 58px;
+        display: flex;
+        align-items: center;
+
+        &:hover,
+        &:active {
+            background-color: $color-primary;
+
+            .titleHeader {
+                color: #ffffff;
+                font-weight: normal;
+            }
+        }
+
+        &.dtBlock {
+            display: block;
+        }
+
+        transition: background-color ease 0.3s;
+
+
+        &.expand {
+            color: #ffffff;
+            border-color: #ffffff33;
+            background-color: $color-default;
+
+            &:hover,
+            &:active {
+                background-color: $color-primary;
+            }
+        }
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 14px;
+        width: 100%;
+        justify-content: space-between;
+
+        .titleHeader {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            font-size: 14px;
+            line-height: 19px;
+            flex-shrink: 1;
+
+            .name {
+                width: fit-content;
+                font-weight: 600;
+                word-break: break-all;
+                flex-shrink: 1;
+                max-width: 800px;
+
+                @include media-breakpoint-down(xxl) {
+                    max-width: 350px;
+                }
+            }
+
+        }
+
+        .expandIcon {
+            padding: 8px 13px;
+            cursor: pointer;
+        }
+    }
+
+    .detailContent {
+        display: grid;
+        background-color: transparent;
+        height: auto;
+        overflow: hidden;
+        transition: grid-template-rows ease 0.4s;
+
+        &>div {
+            grid-row: 1 / span 2;
+            overflow: hidden;
+        }
+    }
+}

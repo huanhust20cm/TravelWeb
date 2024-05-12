@@ -1,0 +1,51 @@
+.contentContact {
+  background: #e0f0fe;
+  position: relative;
+  margin-top: 80px;
+}
+
+.contentContact::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 650px;
+  background: url('@/common/assets/svg/line-1.svg') no-repeat center top;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.contentWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .postImage {
+    margin: -80px 0 0px;
+
+    .imageXl {
+      img {
+        object-fit: contain;
+        width: 100%;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+.serviceForm {
+  padding: 50px 45px 10px;
+}
+
+.footerService {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.imgDoctor {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(-10%, 1%);
+}

@@ -1,0 +1,275 @@
+@import '_color.scss';
+@import '_space.scss';
+
+//=== generate display style eg: .dt-none .dt-flex
+// [none, inline, inline-block, block, table, table-row, table-cell, flex, inline-flex];
+@include generate-display;
+//=== end
+
+//=== generate position style eg: .dt-relative
+// [static, relative, absolute, fixed, sticky];
+@include generate-position;
+//=== end
+
+@include generate-responsive-utils;
+
+.dt-ac {
+    align-items: center;
+}
+
+.dt-al {
+    align-items: left;
+}
+
+//font
+.dt-cap {
+    text-transform: capitalize;
+}
+
+.dt-upp {
+    text-transform: uppercase;
+}
+
+.dt-low {
+    text-transform: lowercase;
+}
+
+// display
+.dt-d-flexcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dt-d-flexbetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dt-d-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.dt-items-center {
+    align-items: center;
+}
+
+.dt-items-start {
+    align-items: start;
+}
+
+.dt-items-end {
+    align-items: flex-end;
+}
+
+.dt-flex-1 {
+    flex: 1;
+}
+
+.dt-flex-grow1 {
+    flex-grow: 1;
+}
+
+// width
+.dt-w5 {
+    width: 5%;
+}
+
+.dt-w10 {
+    width: 10%;
+}
+
+.dt-w15 {
+    width: 15%;
+}
+
+.dt-w20 {
+    width: 20%;
+}
+
+.dt-w25 {
+    width: 25%;
+}
+
+.dt-w30 {
+    width: 30%;
+}
+
+.dt-w35 {
+    width: 35%;
+}
+
+.dt-w40 {
+    width: 40%;
+}
+
+.dt-w45 {
+    width: 45%;
+}
+
+.dt-w50 {
+    width: 50%;
+}
+
+.dt-w60 {
+    width: 60%;
+}
+
+.dt-w70 {
+    width: 70%;
+}
+
+.dt-w80 {
+    width: 80%;
+}
+
+.dt-w90 {
+    width: 90%;
+}
+
+.dt-w100 {
+    width: 100%;
+}
+
+// position
+.dt-fr {
+    float: right;
+}
+
+.dt-pr {
+    position: relative;
+}
+
+.dt-pa {
+    position: absolute;
+}
+
+.dt-tc {
+    text-align: center;
+}
+
+.dt-tl {
+    text-align: left;
+}
+
+.dt-tr {
+    text-align: right;
+}
+
+//pre
+.dt-pre {
+    white-space: pre-wrap;
+}
+
+.dt-pre-break {
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    -ms-word-break: break-word;
+    word-break: break-word;
+}
+
+.dt-cp {
+    cursor: pointer;
+}
+
+.dt-text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dt-hidden-y {
+    overflow: hidden !important;
+}
+
+.dt-pointer {
+    cursor: pointer;
+}
+
+//responsive
+.dt-hide-md {
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+}
+
+//container
+.dt-page-container {
+    width: 100%;
+    padding: $s24 $s32;
+
+    @include media-breakpoint-down(md) {
+        padding: $s16 $s16 0;
+    }
+}
+
+.dt-details-container {
+    padding: 24px 0px;
+    width: 800px;
+    margin-inline: auto;
+    max-width: calc(100% - 32px);
+
+    @include media-breakpoint-down(md) {
+        padding: 16px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        width: 1304px;
+    }
+}
+
+.dt-card-container {
+    .first-label {
+        .ant-form-item-label {
+            padding-top: 0 !important;
+        }
+    }
+
+    .dt-card-con {
+        margin-bottom: 24px;
+    }
+}
+
+.dt-page-title {
+    color: #12161b;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.dt-scrollbar {
+    // scrollbar-width: thin;
+    scrollbar-color: #a9bccc;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 3px;
+        background-color: #e6ecf1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 3px;
+        background-color: #a9bccc;
+    }
+}
+
+.dt-hidden-scrollbar {
+    &::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0 !important;
+    }
+}
+
+.custom-tooltip {
+    color: #222222;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 9px 8px;
+}

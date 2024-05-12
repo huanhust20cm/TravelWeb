@@ -1,0 +1,25 @@
+.schedule {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  width: 50%;
+  margin: 0 auto;
+  :global {
+    .datetime-picker {
+      > div:first-child .ant-form-item-label {
+        overflow: visible;
+      }
+
+      label[for='startDate'] {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+.button {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
